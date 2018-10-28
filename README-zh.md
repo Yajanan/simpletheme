@@ -1,32 +1,31 @@
 # simpletheme
 
-English|[中文](README-zh.md)
+[English](README.md)|中文
 
-Hexo theme
+Hexo主题
 
-a simple,simple and simple theme.
+一个简单到简陋的主题。
 
 
-## Installation
+## 使用
 
-### Install
+### 安装
 
 ```bash
 $ git clone https://github.com/Yajanan/simpletheme.git themes/simpletheme
 ```
 
-### Enable
+### 使用 
+将 `_config.yml` 中的`theme`选项改成 `simpletheme`。
 
-Modify `theme` setting in `_config.yml` to `simpletheme`.
-
-### Update
+### 更新
 
 ```bash
 cd themes/simpletheme
 git pull
 ```
 
-## Highligt
+## 代码高亮
 
 ```yaml
 hljs:
@@ -39,30 +38,27 @@ hljs:
     right: ':'
     copy: Copy Code
 ```
+将`_config.yml`中`highlight`下的 `enable` 选项改为false，然后将上面的内容添加进`_config.yml`。
 
-Modify `highlight`  `enable` setting in `_config.yml` to false ,and then add the above to `_config.yml`.
+## 特性
 
+简单，简单 ，非常简单。
 
-
-## Features
-
-Simple,simple and simple.
-
-### Home
+### 首页
 
 ![hexo-simpletheme-home](https://raw.githubusercontent.com/Yajanan/my-images/master/hexo-simpletheme-home.png)
 
-### Article
+### 文章页
 
 ![hexo-simpletheme-article](https://raw.githubusercontent.com/Yajanan/my-images/master/hexo-simpletheme-article.png)
 
 
 
-## Links
+## 链接
 
 [HEXO](https://hexo.io/)
 
-## License
+## 开源协议（License）
 
 ```html
 MIT License

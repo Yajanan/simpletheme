@@ -2,8 +2,8 @@
     <article class="post">
         <table id="list" cellpadding="0.1em" cellspacing="0">
             <colgroup>
-                <col width="80%"/>
-                <col width="20%"/>
+                <col width="80%" />
+                <col width="20%" />
             </colgroup>
             <thead>
                 <tr>
@@ -12,17 +12,32 @@
                 </tr>
             </thead>
             <tbody>
-            <% page.posts.each(function (post) { %>                
-                <tr>
-                    <td><a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a></td>
-                    <td><span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span></td>
-                </tr>
-            <% }) %>
+                <% page.posts.each(function (post) { %>
+                    <tr>
+                        <td>
+                            <a class="post-title-link" href="<%- url_for(post.path) %>">
+                                <%= post.title %>
+                            </a>
+                        </td>
+                        <td>
+                            <span class="post-time">
+                                <%- date(post.date, "YYYY-MM-DD") %>
+                            </span>
+                        </td>
+                    </tr>
+                <% }) %>
             </tbody>
         </table>
     </article>
 <% }else{ %>
+
     <div class="gap"></div>
-    <h1><%= post.title %></h1>
-    <div class="article-entry pre code"><%- post.content %></div>
+
+    <h1>
+        <%= post.title %>
+    </h1>
+
+    <div>
+        <%- post.content %>
+    </div>
 <% } %>

@@ -4,6 +4,9 @@
   padding: 0.5em;
   color: #383a42;
   font-family: Tahoma, Geneva, sans-serif;
+  background-color: rgba(244,244,244,.8);
+  border-radius: 5px;
+  line-height: 1.5rem;
 }
 
 .hljs-comment,

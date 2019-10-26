@@ -2,7 +2,7 @@
 
 body,
 html {
-  font-family: 'lato', Tahoma, Geneva, sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
   background-color: rgb(255, 255, 255);
 }
 
@@ -33,7 +33,19 @@ th {
 
 #list {
   width: 100%;
-  border: 1px solid rgb(170, 170, 170);
+  border: 0 solid rgb(170, 170, 170);
+}
+
+header{
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+header img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  float: left
 }
 
 a {
@@ -54,16 +66,6 @@ tr:hover {
   background-color: rgba(128, 128, 128, .3);
 }
 
-.blog-name {
-  color: black;
-  text-decoration: none;
-}
-
-.blog-name:hover {
-  color: black;
-  border-bottom: 1px solid black;
-}
-
 .gap {
   height: 0;
   border: 1px dotted rgba(128, 128, 128, .3);
@@ -75,4 +77,8 @@ tr:hover {
 
 #page_prev {
   float: right;
+}
+
+#post-footer {
+  margin-bottom: 200px;
 }

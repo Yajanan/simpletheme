@@ -1,2 +1,11 @@
-<a class="blog-name" href="/"><h1><%= config.title %></h1></a>
-<h2><%= config.subtitle %></h2>
+<a class="blog-name" href="/">
+    <img src="/logo-boxcode.png">
+</a>
+
+<% if (config.title){ %>
+    <h1><%= config.title %></h1>
+<% } %>
+
+<% if (config.subtitle){ %>
+    <h2><%= config.subtitle %></h2>
+<% } %>
